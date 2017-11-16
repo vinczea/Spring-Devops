@@ -1,5 +1,5 @@
 - hosts: webservers
- tasks:
+  tasks:
   - name: confirm docker
     command: docker info
   - name: docker run

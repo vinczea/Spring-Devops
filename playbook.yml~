@@ -1,0 +1,6 @@
+- hosts: webservers
+ tasks:
+  - name: confirm docker
+    command: docker info
+  - name: docker run
+    command: docker run -d -p 8765:8080 vinczea/calculator-example
